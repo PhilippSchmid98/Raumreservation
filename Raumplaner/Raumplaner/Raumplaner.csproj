@@ -65,6 +65,9 @@
     <Compile Include="WindowMieter.xaml.cs">
       <DependentUpon>WindowMieter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowReservation.xaml.cs">
+      <DependentUpon>WindowReservation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowVerwaltung.xaml.cs">
       <DependentUpon>WindowVerwaltung.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WindowMieter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowReservation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
