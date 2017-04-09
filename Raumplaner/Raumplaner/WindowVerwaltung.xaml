@@ -1,0 +1,34 @@
+﻿<Window x:Class="Raumplaner.WindowVerwaltung"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Raumplaner"
+        mc:Ignorable="d"
+        Title="Raumplaner" Height="400" Width="600" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Reservationen" FontSize="30" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+        <DataGrid Name="dgReservations" Grid.Row="1" Margin="5" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ReservationId}" Header="ID"/>
+                <DataGridTextColumn Binding="{Binding RoomFK}" Header="Raum Id"/>
+                <DataGridTextColumn Binding="{Binding StartDate}" Header="Von"/>
+                <DataGridTextColumn Binding="{Binding EndDate}" Header="Bis"/>
+                <DataGridTextColumn Binding="{Binding LastName}" Header="Mieter Nachname"/>
+                <DataGridTextColumn Binding="{Binding FirstName}" Header="Mieter Vorname"/>
+                <DataGridTextColumn Binding="{Binding Street}" Header="Mieter Strasse"/>
+                <DataGridTextColumn Binding="{Binding Village}" Header="Mieter Ort" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Name="btnDelete" IsEnabled="{Binding ElementName=dgReservations, Path=SelectedItem, Converter={StaticResource ObjectConverter}}" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Löschen" Margin="0,4.6,214.6,5.4" Click="btnDelete_Click"/>
+        <Button Name="btnEdit" IsEnabled="{Binding ElementName=dgReservations, Path=SelectedItem, Converter={StaticResource ObjectConverter}}" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Bearbeiten" Margin="0,4.6,109.6,5.4" Click="btnEdit_Click"/>
+        <Button Name="btnNeu" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Neu" Margin="5" Click="btnNeu_Click"/>
+    </Grid>
+</Window>

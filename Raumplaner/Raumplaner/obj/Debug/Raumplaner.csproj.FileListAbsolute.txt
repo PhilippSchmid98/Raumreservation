@@ -1,0 +1,22 @@
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\bin\Debug\Raumplaner.exe.config
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\bin\Debug\Raumplaner.exe
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\bin\Debug\Raumplaner.pdb
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\MainWindow.g.cs
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\WindowMieter.g.cs
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\WindowVerwaltung.g.cs
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\App.g.cs
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner_MarkupCompile.cache
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner_MarkupCompile.lref
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\MainWindow.baml
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\WindowMieter.baml
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\WindowVerwaltung.baml
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner.g.resources
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner.Properties.Resources.resources
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner.csproj.GenerateResource.Cache
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner.exe
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner.pdb
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\App.baml
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.exe.config
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.exe
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.pdb
