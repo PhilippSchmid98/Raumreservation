@@ -39,7 +39,7 @@ namespace Raumplaner
     #endregion
 		
 		public entitiesDataContext() : 
-				base(global::Raumplaner.Properties.Settings.Default.RaumplanerConnectionString1, mappingSource)
+				base(global::Raumplaner.Properties.Settings.Default.RaumplanerConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

@@ -17,9 +17,9 @@ c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raump
 c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\Raumplaner.pdb
 c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\GeneratedInternalTypeHelper.g.cs
 c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\App.baml
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.mdf
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner_log.ldf
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.exe.config
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.exe
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.pdb
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.exe
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.pdb
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\MainWindow.g.cs
@@ -27,6 +27,7 @@ C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Wind
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\WindowReservation.g.cs
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\WindowVerwaltung.g.cs
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\App.g.cs
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner_Content.g.cs
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner_MarkupCompile.cache
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner_MarkupCompile.lref
@@ -38,7 +39,5 @@ C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Wind
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.g.resources
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.Properties.Resources.resources
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.csproj.GenerateResource.Cache
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.mdf
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner_log.ldf
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.csprojResolveAssemblyReference.cache
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner_Content.g.cs
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.exe
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.pdb
