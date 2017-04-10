@@ -22,7 +22,6 @@ C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raum
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.pdb
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.exe
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\bin\Debug\Raumplaner.pdb
-C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\Raumplaner.csprojResolveAssemblyReference.cache
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\MainWindow.g.cs
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\WindowMieter.g.cs
 C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\WindowReservation.g.cs

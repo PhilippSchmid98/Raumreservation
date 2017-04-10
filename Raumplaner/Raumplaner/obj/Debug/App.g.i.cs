@@ -74,6 +74,8 @@ namespace Raumplaner {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
+            SplashScreen splashScreen = new SplashScreen("resource/loading-002.jpg");
+            splashScreen.Show(true);
             Raumplaner.App app = new Raumplaner.App();
             app.InitializeComponent();
             app.Run();
