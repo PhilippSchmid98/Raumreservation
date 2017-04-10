@@ -29,6 +29,6 @@
         </DataGrid>
         <Button Name="btnDelete" IsEnabled="{Binding ElementName=dgReservations, Path=SelectedItem, Converter={StaticResource ObjectConverter}}" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Löschen" Margin="0,4.6,214.6,5.4" Click="btnDelete_Click"/>
         <Button Name="btnEdit" IsEnabled="{Binding ElementName=dgReservations, Path=SelectedItem, Converter={StaticResource ObjectConverter}}" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Bearbeiten" Margin="0,4.6,109.6,5.4" Click="btnEdit_Click"/>
-        <Button Name="btnNeu" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Neu" Margin="5" Click="btnNeu_Click"/>
+        <Button Name="btnNeu" Click="btnNeu_Click" Grid.Row="2" HorizontalAlignment="Right" Width="100" Content="Neu" Margin="5"/>
     </Grid>
 </Window>

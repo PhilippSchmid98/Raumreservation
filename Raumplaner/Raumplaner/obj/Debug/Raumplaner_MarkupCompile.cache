@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\obj\Debug\
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\obj\Debug\
 Raumplaner
 none
 false
 DEBUG;TRACE
-c:\users\phili\persoenlichedokumente\documents\visual studio 2015\Projects\Raumplaner\Raumplaner\App.xaml
-3-1868770521
+C:\Users\phili\Source\Repos\Raumreservation\Raumplaner\Raumplaner\App.xaml
+41018270291
 
-9-408097103
+101530496104
 14-29470649
-MainWindow.xaml;WindowMieter.xaml;WindowVerwaltung.xaml;
+MainWindow.xaml;WindowMieter.xaml;WindowReservation.xaml;WindowVerwaltung.xaml;
 
 False
 

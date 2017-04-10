@@ -24,22 +24,22 @@ namespace Raumplaner
             InitializeComponent();
             dgReservations.ItemsSource = new entitiesDataContext().Reservation;
         }
-
+        //ONCLOSE
         private void Window_Closed(object sender, EventArgs e)
         {
             new MainWindow().Show();
         }
-
+        //NEW RESERVATION
         private void btnNeu_Click(object sender, RoutedEventArgs e)
         {
-
+            new WindowReservation(this).Show();
         }
-
+        //EDIT RESERVATION
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            new WindowReservation(this, dgReservations.SelectedItem as Reservation).Show();
         }
-
+        //DELETE RESERVATION
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             if(dgReservations.SelectedItem != null)
