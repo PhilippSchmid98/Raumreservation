@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Raumplaner" Class="entitiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Raumplaner;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="Raumplaner.Properties.Settings" SettingsPropertyName="RaumplanerConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Raumplaner.mdf;Integrated Security=True" SettingsObjectName="Raumplaner.Properties.Settings" SettingsPropertyName="RaumplanerConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TblRoom" Member="TblRoom">
+    <Type Name="TblRoom">
+      <Column Name="RoomId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Floor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Building" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Reservation" Member="Reservation">
     <Type Name="Reservation">
       <Column Name="ReservationId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -10,15 +19,6 @@
       <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Street" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="Village" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TblRoom" Member="TblRoom">
-    <Type Name="TblRoom">
-      <Column Name="RoomId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Capacity" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Description" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="Floor" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Building" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

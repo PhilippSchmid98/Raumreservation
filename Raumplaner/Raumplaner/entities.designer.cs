@@ -30,16 +30,16 @@ namespace Raumplaner
 		
     #region Definitionen der Erweiterungsmethoden
     partial void OnCreated();
-    partial void InsertReservation(Reservation instance);
-    partial void UpdateReservation(Reservation instance);
-    partial void DeleteReservation(Reservation instance);
     partial void InsertTblRoom(TblRoom instance);
     partial void UpdateTblRoom(TblRoom instance);
     partial void DeleteTblRoom(TblRoom instance);
+    partial void InsertReservation(Reservation instance);
+    partial void UpdateReservation(Reservation instance);
+    partial void DeleteReservation(Reservation instance);
     #endregion
 		
 		public entitiesDataContext() : 
-				base(global::Raumplaner.Properties.Settings.Default.RaumplanerConnectionString, mappingSource)
+				base(global::Raumplaner.Properties.Settings.Default.RaumplanerConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -68,6 +68,14 @@ namespace Raumplaner
 			OnCreated();
 		}
 		
+		public System.Data.Linq.Table<TblRoom> TblRoom
+		{
+			get
+			{
+				return this.GetTable<TblRoom>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Reservation> Reservation
 		{
 			get
@@ -75,12 +83,162 @@ namespace Raumplaner
 				return this.GetTable<Reservation>();
 			}
 		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TblRoom")]
+	public partial class TblRoom : INotifyPropertyChanging, INotifyPropertyChanged
+	{
 		
-		public System.Data.Linq.Table<TblRoom> TblRoom
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _RoomId;
+		
+		private System.Nullable<int> _Capacity;
+		
+		private string _Description;
+		
+		private System.Nullable<int> _Floor;
+		
+		private string _Building;
+		
+    #region Definitionen der Erweiterungsmethoden
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnRoomIdChanging(int value);
+    partial void OnRoomIdChanged();
+    partial void OnCapacityChanging(System.Nullable<int> value);
+    partial void OnCapacityChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    partial void OnFloorChanging(System.Nullable<int> value);
+    partial void OnFloorChanged();
+    partial void OnBuildingChanging(string value);
+    partial void OnBuildingChanged();
+    #endregion
+		
+		public TblRoom()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoomId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int RoomId
 		{
 			get
 			{
-				return this.GetTable<TblRoom>();
+				return this._RoomId;
+			}
+			set
+			{
+				if ((this._RoomId != value))
+				{
+					this.OnRoomIdChanging(value);
+					this.SendPropertyChanging();
+					this._RoomId = value;
+					this.SendPropertyChanged("RoomId");
+					this.OnRoomIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capacity", DbType="Int")]
+		public System.Nullable<int> Capacity
+		{
+			get
+			{
+				return this._Capacity;
+			}
+			set
+			{
+				if ((this._Capacity != value))
+				{
+					this.OnCapacityChanging(value);
+					this.SendPropertyChanging();
+					this._Capacity = value;
+					this.SendPropertyChanged("Capacity");
+					this.OnCapacityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(250)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this.OnDescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Description = value;
+					this.SendPropertyChanged("Description");
+					this.OnDescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Floor", DbType="Int")]
+		public System.Nullable<int> Floor
+		{
+			get
+			{
+				return this._Floor;
+			}
+			set
+			{
+				if ((this._Floor != value))
+				{
+					this.OnFloorChanging(value);
+					this.SendPropertyChanging();
+					this._Floor = value;
+					this.SendPropertyChanged("Floor");
+					this.OnFloorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Building", DbType="NVarChar(50)")]
+		public string Building
+		{
+			get
+			{
+				return this._Building;
+			}
+			set
+			{
+				if ((this._Building != value))
+				{
+					this.OnBuildingChanging(value);
+					this.SendPropertyChanging();
+					this._Building = value;
+					this.SendPropertyChanged("Building");
+					this.OnBuildingChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -290,164 +448,6 @@ namespace Raumplaner
 					this._Village = value;
 					this.SendPropertyChanged("Village");
 					this.OnVillageChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TblRoom")]
-	public partial class TblRoom : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _RoomId;
-		
-		private System.Nullable<int> _Capacity;
-		
-		private string _Description;
-		
-		private System.Nullable<int> _Floor;
-		
-		private string _Building;
-		
-    #region Definitionen der Erweiterungsmethoden
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnRoomIdChanging(int value);
-    partial void OnRoomIdChanged();
-    partial void OnCapacityChanging(System.Nullable<int> value);
-    partial void OnCapacityChanged();
-    partial void OnDescriptionChanging(string value);
-    partial void OnDescriptionChanged();
-    partial void OnFloorChanging(System.Nullable<int> value);
-    partial void OnFloorChanged();
-    partial void OnBuildingChanging(string value);
-    partial void OnBuildingChanged();
-    #endregion
-		
-		public TblRoom()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoomId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int RoomId
-		{
-			get
-			{
-				return this._RoomId;
-			}
-			set
-			{
-				if ((this._RoomId != value))
-				{
-					this.OnRoomIdChanging(value);
-					this.SendPropertyChanging();
-					this._RoomId = value;
-					this.SendPropertyChanged("RoomId");
-					this.OnRoomIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capacity", DbType="Int")]
-		public System.Nullable<int> Capacity
-		{
-			get
-			{
-				return this._Capacity;
-			}
-			set
-			{
-				if ((this._Capacity != value))
-				{
-					this.OnCapacityChanging(value);
-					this.SendPropertyChanging();
-					this._Capacity = value;
-					this.SendPropertyChanged("Capacity");
-					this.OnCapacityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(250)")]
-		public string Description
-		{
-			get
-			{
-				return this._Description;
-			}
-			set
-			{
-				if ((this._Description != value))
-				{
-					this.OnDescriptionChanging(value);
-					this.SendPropertyChanging();
-					this._Description = value;
-					this.SendPropertyChanged("Description");
-					this.OnDescriptionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Floor", DbType="Int")]
-		public System.Nullable<int> Floor
-		{
-			get
-			{
-				return this._Floor;
-			}
-			set
-			{
-				if ((this._Floor != value))
-				{
-					this.OnFloorChanging(value);
-					this.SendPropertyChanging();
-					this._Floor = value;
-					this.SendPropertyChanged("Floor");
-					this.OnFloorChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Building", DbType="NVarChar(50)")]
-		public string Building
-		{
-			get
-			{
-				return this._Building;
-			}
-			set
-			{
-				if ((this._Building != value))
-				{
-					this.OnBuildingChanging(value);
-					this.SendPropertyChanging();
-					this._Building = value;
-					this.SendPropertyChanged("Building");
-					this.OnBuildingChanged();
 				}
 			}
 		}
